@@ -410,7 +410,7 @@ ol.breadcrumb li a, ol.breadcrumb li span {
   position: absolute;
   z-index: 5;
   top: -135px;
-  inset-inline-end: -33%;
+  inset-inline-end: -25%;
   width: 1280px;
 }
 .features .general-title {
@@ -478,12 +478,20 @@ ol.breadcrumb li a, ol.breadcrumb li span {
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 1600px) {
+  .features .mobile-hand-img {
+    inset-inline-end: -35%;
+  }
+}
 @media only screen and (max-width: 1299px) {
   .features .mobile-hand-img {
-    inset-inline-end: -46%;
+    inset-inline-end: -45%;
   }
 }
 @media only screen and (max-width: 1199px) {
+  .features .mobile-hand-img {
+    inset-inline-end: -44%;
+  }
   .features .general-title {
     font-size: 30px;
     line-height: 1.5;
@@ -492,7 +500,7 @@ ol.breadcrumb li a, ol.breadcrumb li span {
     width: 470px;
   }
   .features .mobile-hand-img {
-    width: 1100px;
+    width: 1000px;
     top: -100px;
   }
   .features {
@@ -1269,11 +1277,15 @@ header {
 @media screen and (max-width: 1930px) {
   .hero-mobile {
     width: 600px;
+    bottom: -10px;
+    inset-inline-end: -13%;
   }
 }
 @media screen and (max-width: 1600px) {
   .hero-mobile {
     width: 500px;
+    bottom: -25px;
+    inset-inline-end: 0;
   }
 }
 .scroll-btn {
@@ -1325,13 +1337,14 @@ header {
   .hero-mobile {
     width: 445px;
     inset-inline-end: 0;
+    bottom: 25px;
   }
 }
 @media only screen and (max-width: 991px) {
   .hero-mobile {
-    width: 315px;
-    inset-inline-end: 0;
-    bottom: 20px;
+    width: 356px;
+    inset-inline-end: -54px;
+    bottom: 36px;
   }
   .banner-desc .main-title {
     font-size: 30px;

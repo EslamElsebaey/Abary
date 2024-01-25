@@ -6,13 +6,17 @@
       position: relative;
     }
   }
-
+.mainbanner-cont{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
   .hero-mobile{
     position: absolute;
-    bottom: -25px;
+    bottom: -40px;
     z-index: 2;
-    inset-inline-end: 60px;
-    width: 490px;
+    inset-inline-end: 0;
+    width: 540px;
   }
   .mainBanner-parent{
     direction: rtl;
@@ -63,6 +67,21 @@
    
   }
   
+
+  @media screen and (max-width : 1930px) {
+    .hero-mobile{
+      width: 600px;
+    }
+  }
+
+  
+  @media screen and (max-width : 1600px) {
+    .hero-mobile{
+      width: 500px ;
+    }
+  }
+
+
 
 
 
@@ -120,16 +139,16 @@
 
 @include max-1200{
   .hero-mobile{
-    width: 470px;
-    inset-inline-end : 35px ;
+    width: 445px;
+    inset-inline-end: 0;
   }
 }
 
 @include max-992 {
   .hero-mobile{
-    width: 400px;
+    width: 315px;
     inset-inline-end: 0;
-    bottom: 0;
+    bottom: 20px;
   }
   .banner-desc .main-title{
     font-size: 30px;
@@ -145,7 +164,7 @@
 
 @include max-768 {
   .mainBanner .container{
-    overflow: auto;
+    overflow: hidden;
   }
   .banner-desc .download-links{
     width: 100%;

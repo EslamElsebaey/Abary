@@ -532,10 +532,10 @@ ol.breadcrumb li a, ol.breadcrumb li span {
 @media only screen and (max-width: 767px) {
   .features .mobile-hand-img {
     top: unset;
-    bottom: -150px;
+    bottom: -251px;
     left: 50%;
-    width: 550px;
-    margin-left: -370px;
+    width: 645px;
+    margin-left: -410px;
   }
   .features-parent {
     width: 100%;
@@ -1205,12 +1205,18 @@ header {
   position: relative;
 }
 
+.mainbanner-cont {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
 .hero-mobile {
   position: absolute;
-  bottom: -25px;
+  bottom: -40px;
   z-index: 2;
-  inset-inline-end: 60px;
-  width: 490px;
+  inset-inline-end: 0;
+  width: 540px;
 }
 
 .mainBanner-parent {
@@ -1260,6 +1266,16 @@ header {
   background-color: #3f8acb;
 }
 
+@media screen and (max-width: 1930px) {
+  .hero-mobile {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .hero-mobile {
+    width: 500px;
+  }
+}
 .scroll-btn {
   position: absolute;
   display: flex;
@@ -1307,15 +1323,15 @@ header {
 }
 @media only screen and (max-width: 1199px) {
   .hero-mobile {
-    width: 470px;
-    inset-inline-end: 35px;
+    width: 445px;
+    inset-inline-end: 0;
   }
 }
 @media only screen and (max-width: 991px) {
   .hero-mobile {
-    width: 400px;
+    width: 315px;
     inset-inline-end: 0;
-    bottom: 0;
+    bottom: 20px;
   }
   .banner-desc .main-title {
     font-size: 30px;
@@ -1329,7 +1345,7 @@ header {
 }
 @media only screen and (max-width: 767px) {
   .mainBanner .container {
-    overflow: auto;
+    overflow: hidden;
   }
   .banner-desc .download-links {
     width: 100%;
